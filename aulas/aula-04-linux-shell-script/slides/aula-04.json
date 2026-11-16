@@ -392,7 +392,7 @@
    "tipo": "conteudo",
    "bloco": "parte2",
    "titulo": "Travou na digitação? Baixe a versão pronta",
-   "codigo": "cd ~/meu-projeto-devops/scripts\ncurl -O https://raw.githubusercontent.com/matera-vrn/bootcamp-devops-2026/main/aulas/aula-04-linux-shell-script/scripts/relatorio.sh\ncurl -O https://raw.githubusercontent.com/matera-vrn/bootcamp-devops-2026/main/aulas/aula-04-linux-shell-script/scripts/healthcheck.sh\nchmod +x relatorio.sh healthcheck.sh",
+   "codigo": "cd ~/meu-projeto-devops/scripts\ncurl -O https://raw.githubusercontent.com/viniciusnavarro/bootcamp-devops-2026/main/aulas/aula-04-linux-shell-script/scripts/relatorio.sh\ncurl -O https://raw.githubusercontent.com/viniciusnavarro/bootcamp-devops-2026/main/aulas/aula-04-linux-shell-script/scripts/healthcheck.sh\nchmod +x relatorio.sh healthcheck.sh",
    "bullets": [
     "`curl -O` baixa o arquivo para a pasta atual, com o mesmo nome. Cole a URL via SSH.",
     "**Leia antes de executar** (`cat healthcheck.sh`): hábito de quem leva segurança a sério.",

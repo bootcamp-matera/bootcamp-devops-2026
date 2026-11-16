@@ -139,8 +139,8 @@ Os dois scripts estão neste repositório. Via SSH, baixe-os direto para a pasta
 
 ```bash
 cd ~/meu-projeto-devops/scripts
-curl -O https://raw.githubusercontent.com/matera-vrn/bootcamp-devops-2026/main/aulas/aula-04-linux-shell-script/scripts/relatorio.sh
-curl -O https://raw.githubusercontent.com/matera-vrn/bootcamp-devops-2026/main/aulas/aula-04-linux-shell-script/scripts/healthcheck.sh
+curl -O https://raw.githubusercontent.com/viniciusnavarro/bootcamp-devops-2026/main/aulas/aula-04-linux-shell-script/scripts/relatorio.sh
+curl -O https://raw.githubusercontent.com/viniciusnavarro/bootcamp-devops-2026/main/aulas/aula-04-linux-shell-script/scripts/healthcheck.sh
 chmod +x relatorio.sh healthcheck.sh
 ```
 
