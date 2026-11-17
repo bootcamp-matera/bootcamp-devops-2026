@@ -71,6 +71,8 @@ EXPOSE 80                                # documente a porta usada
 
 > 🔢 Lembra de IP e portas da Aula 03? O `-p externa:interna` é a ponte entre o mundo e o container.
 
+> 📝 Todos os comandos, e o socorro dos erros, estão na [cola do Docker e do Compose](../../recursos/cheat-sheet-docker.md). Imprima e deixe ao lado.
+
 ---
 
 ## Parte 2 — Mão na massa

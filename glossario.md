@@ -15,12 +15,14 @@ Os termos do bootcamp explicados em uma linha, em ordem alfabética. Não decore
 | **commit** | Uma "foto" do projeto gravada no histórico do Git, com autor, data e mensagem |
 | **container** | Um programa empacotado com tudo que precisa, rodando isolado — como um "apartamento" dentro do sistema |
 | **cron** | O "despertador" do Linux: executa comandos em horários agendados |
+| **declarativo / imperativo** | Dois jeitos de pedir: *imperativo* dita os passos (`docker run`, um por um); *declarativo* descreve o resultado desejado (o `compose.yaml`) e a ferramenta faz acontecer |
 | **deploy** | Colocar uma versão do sistema no ar (em produção) |
 | **/dev/null** | O "buraco negro" do Linux: tudo que é enviado para lá some. Usado para descartar a saída de um comando |
 | **DevSecOps** | DevOps com segurança desde o início: verificações de segurança fazem parte da esteira |
 | **diretório** | O mesmo que pasta |
 | **distribuição (distro)** | Um "pacote completo" de Linux: o kernel mais as ferramentas. Ubuntu, Debian, Fedora são distribuições |
 | **DNS** | A "agenda de contatos" da internet: traduz nomes (`matera.com`) em endereços IP |
+| **Docker Compose** | Plugin do Docker que lê um `compose.yaml` e sobe vários containers juntos, com uma rede entre eles: `docker compose up -d` |
 | **Docker Hub** | O "mercado público" de imagens Docker prontas (`ubuntu`, `nginx`, `redis`...) |
 | **Dockerfile** | A receita, em texto, para construir uma imagem Docker |
 | **esteira** | O mesmo que *pipeline*: a sequência automática de etapas que o código percorre até produção |
@@ -56,6 +58,7 @@ Os termos do bootcamp explicados em uma linha, em ordem alfabética. Não decore
 | **root** | O superusuário do Linux: pode tudo. `sudo` executa um único comando como root |
 | **runner** | A máquina que executa a pipeline no GitHub Actions |
 | **script** | Um arquivo de texto com comandos que o shell executa em sequência |
+| **serviço (Compose)** | Cada container declarado no `compose.yaml` (`site`, `visitas`). Não confundir com o serviço do Linux, ligado pelo `systemctl` |
 | **shebang** | A primeira linha de um script (`#!/bin/bash`), que diz qual programa deve executá-lo |
 | **shell** | O programa que interpreta seus comandos no terminal (no Ubuntu, o *bash*) |
 | **SSH** | Forma segura de usar o terminal de outra máquina a partir da sua |
