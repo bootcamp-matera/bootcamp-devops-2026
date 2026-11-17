@@ -4,6 +4,8 @@
 
 **Onde:** no terminal conectado à VM via SSH (como no [setup](../../setup/instalacao-ubuntu-vm.md)). A janela do VirtualBox também serve, mas sem copiar e colar.
 
+> 📝 Deixe a [cola do Docker e do Compose](../../recursos/cheat-sheet-docker.md) aberta ao lado: o desenho do sistema que você vai montar, o `compose.yaml` linha a linha e o socorro dos erros.
+
 ## Passo 1 — Instale o plugin do Compose
 
 ```bash
@@ -118,12 +120,15 @@ Adicione um terceiro serviço ao `compose.yaml` usando a imagem `traefik/whoami`
 
 | Mensagem | Causa provável |
 |----------|----------------|
-| `yaml: line X: ...` | Indentação errada — use 2 espaços, remova Tabs |
+| `yaml: line X: ...` | Indentação errada — use 2 espaços, remova Tabs (`docker compose config` aponta a linha) |
 | `port is already allocated` | Sobrou um container da Aula 07 na 8080: `docker ps` + `docker stop <nome>` |
 | `permission denied ... docker.sock` | Sessão sem o grupo docker — saia (`exit`) e conecte de novo por SSH |
 | `no configuration file provided: not found` | Rode os comandos de dentro de `~/meu-projeto-devops`, onde está o `compose.yaml` |
 | `'compose' is not a docker command` | O plugin não foi instalado — refaça o Passo 1 |
+| `compose build requires buildx 0.17.0 or later` | Falta o construtor de imagens da Aula 07: `sudo apt install -y docker-buildx` e rode o `up` de novo |
 | `pull access denied` | Erro de digitação no nome da imagem (`redis:alpine`) |
+
+Outra mensagem? O socorro completo está na [cola do Docker e do Compose](../../recursos/cheat-sheet-docker.md#-socorro).
 
 ## Missão até a próxima aula 📌
 

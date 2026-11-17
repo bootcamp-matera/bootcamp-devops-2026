@@ -64,6 +64,8 @@ services:            # a lista de containers do sistema
 | `docker compose logs -f site` | Acompanha os logs de um serviço |
 | `docker compose down` | Derruba tudo, limpo |
 
+> 📝 Estes e outros comandos — com o desenho do sistema, o `compose.yaml` linha a linha e o socorro dos erros — estão na [cola do Docker e do Compose](../../recursos/cheat-sheet-docker.md). Imprima e deixe ao lado.
+
 ### 5. Onde isso te leva
 
 - Ambiente de desenvolvimento de um time inteiro: `git clone` + `docker compose up`. Fim do "configura aí que na sexta eu te ajudo".
