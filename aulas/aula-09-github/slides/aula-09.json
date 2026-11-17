@@ -287,9 +287,9 @@
     "Token Name: `bootcamp-matera` · Description: `Token bootcamp-matera`",
     "Resource owner: seu username · Expiration: `30 dias`"
    ],
-   "destaque": "Próximo slide: o alcance do token (repositório e permissões).",
+   "destaque": "⚡ Atalho: na prática há um link que abre este formulário já preenchido. E-mail da conta precisa estar confirmado.",
    "minutos": 4,
-   "notas": "⏱ 4 min — Navegue junto com a turma: Avatar → Settings → Developer settings → Personal access tokens → Fine-grained tokens → Generate new token. Preencha nome, descrição, resource owner e expiração de 30 dias. Explique: fine-grained = escopo restrito; 30 dias = prazo curto de propósito. Quem se perder no menu, chame um monitor."
+   "notas": "⏱ 4 min — Navegue junto com a turma: Avatar → Settings → Developer settings → Personal access tokens → Fine-grained tokens → Generate new token. Preencha nome, descrição, resource owner e expiração de 30 dias. Explique: fine-grained = escopo restrito; 30 dias = prazo curto de propósito. Quem se perder no menu, chame um monitor. Atalho: o Passo 3 da prática traz um link que abre o formulário com nome, descrição, 30 dias e as duas permissões já preenchidos; cole o link no chat para quem estiver atrasado. Quem não confirmou o e-mail da conta não consegue criar token: peça para abrir o e-mail de confirmação do GitHub."
   },
   {
    "tipo": "conteudo",

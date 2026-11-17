@@ -27,6 +27,8 @@ Uma página para imprimir ou deixar aberta ao lado. Tudo aqui é o GitHub do boo
 
 Caminho: avatar → **Settings** → **Developer settings** → **Personal access tokens** → **Fine-grained tokens** → **Generate new token**.
 
+Atalho: [formulário já preenchido](https://github.com/settings/personal-access-tokens/new?name=bootcamp-matera&description=Token+bootcamp-matera&expires_in=30&contents=write&workflows=write) — falta só escolher o repositório. O e-mail da conta precisa estar confirmado.
+
 | Campo | Valor no bootcamp | Por quê |
 |-------|-------------------|---------|
 | Token name | `bootcamp-matera` | Para você reconhecer (e revogar) depois |
