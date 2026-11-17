@@ -4,6 +4,8 @@
 
 **Onde:** navegador do **seu computador** + terminal conectado à VM **via SSH** — obrigatório hoje: você vai precisar colar um token longo (veja o [setup](../../setup/instalacao-ubuntu-vm.md), passo 5).
 
+> 📝 Deixe a [cola do GitHub](../../recursos/cheat-sheet-github.md) aberta ao lado: o token campo a campo, o ciclo do Pull Request desenhado e o socorro dos erros.
+
 ## Passo 1 — Conta no GitHub pronta?
 
 Você criou a conta na missão da Aula 08? Então siga para o Passo 2. 😉
@@ -36,10 +38,22 @@ No GitHub: botão **New** (ou https://github.com/new):
 
 ## Passo 4 — Conecte o repositório local ao remoto
 
-No terminal da VM (troque `SEU-USUARIO` pelo seu usuário do GitHub):
+Antes de enviar, confira **o que** vai ser enviado. No terminal da VM:
 
 ```bash
 cd ~/meu-projeto-devops
+git status
+git log --oneline --all --decorate
+```
+
+Resultado esperado: `On branch main`, `nothing to commit, working tree clean` e, no log, o commit mais recente (o do `compose.yaml`) com `(HEAD -> main)`.
+
+- **Está em outra branch** (por exemplo `melhoria-healthcheck`, da Aula 06)? Os commits do Dockerfile e do compose podem ter ficado só nela, e o push da `main` subiria um projeto incompleto. Traga tudo para a `main`: `git checkout main` e depois `git merge --no-edit melhoria-healthcheck`.
+- **Apareceram arquivos modificados?** Faça o commit deles antes (`git add` + `git commit`, como na Aula 06).
+
+Agora ligue o repositório local ao remoto (troque `SEU-USUARIO` pelo seu usuário do GitHub):
+
+```bash
 git remote add origin https://github.com/SEU-USUARIO/meu-projeto-devops.git
 git remote -v
 ```
@@ -121,8 +135,11 @@ Capriche no seu **perfil** do GitHub: foto, bio ("Estudante de DevOps — Bootca
 | `remote origin already exists` | `git remote remove origin` e refaça o Passo 4 |
 | `error: src refspec main does not match any` | Sua branch se chama `master` (faltou o `init.defaultBranch` da Aula 06). Renomeie com `git branch -M main` e repita o push |
 | Colei o token e nada apareceu | Normal: senhas não aparecem. Dê Enter |
-| `error: failed to push some refs` | O repositório remoto foi criado com README — rode `git pull origin main --allow-unrelated-histories` (salve a mensagem com `Ctrl+X`) e repita o push |
+| `error: failed to push some refs` | O repositório remoto foi criado com README — rode `git pull origin main --no-rebase --allow-unrelated-histories --no-edit` e repita o push |
+| No GitHub faltam o `Dockerfile` e o `compose.yaml` | Eles ficaram em outra branch da VM: `git checkout main`, `git merge --no-edit nome-da-branch` e `git push` |
 | `Repository not found` | URL com typo no usuário ou nome do repositório — confira com `git remote -v` |
+
+Outra mensagem? O socorro completo está na [cola do GitHub](../../recursos/cheat-sheet-github.md#-socorro).
 
 ## Missão até a próxima aula 📌
 

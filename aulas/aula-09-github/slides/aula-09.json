@@ -31,7 +31,7 @@
    ],
    "destaque": "Hoje: primeiro `push`, primeiro Pull Request e o começo do seu portfólio.",
    "minutos": 5,
-   "notas": "⏱ 5 min — Boas-vindas. Apresente a agenda e o objetivo do encontro: publicar o projeto no GitHub, entender remotos (push/pull) e abrir o primeiro Pull Request. Avise desde já: hoje o terminal via SSH é obrigatório, porque vai colar um token longo. Quem ainda não configurou, veja o passo 7 do setup durante a Parte 1. Pergunta para o chat: \"Quem já tem conta no GitHub? Responda 'já tenho' ou 'vou criar'.\""
+   "notas": "⏱ 5 min — Boas-vindas. Apresente a agenda e o objetivo do encontro: publicar o projeto no GitHub, entender remotos (push/pull) e abrir o primeiro Pull Request. Avise desde já: hoje o terminal via SSH é obrigatório, porque vai colar um token longo. Quem ainda não configurou, veja o passo 5 do setup durante a Parte 1. Pergunta para o chat: \"Quem já tem conta no GitHub? Responda 'já tenho' ou 'vou criar'.\""
   },
   {
    "tipo": "conteudo",
@@ -212,7 +212,7 @@
    ],
    "destaque": "Hoje à noite, o seu portfólio começa.",
    "minutos": 3,
-   "notas": "⏱ 3 min — Feche a Parte 1 conectando com a prática: o meu-projeto-devops que vocês constroem desde a Aula 02 (scripts, Dockerfile, compose, histórico) vira hoje a primeira peça do portfólio. Resuma o roteiro da Parte 2: conta, repositório, token, push, branch, PR, merge, pull. Lembre: quem ainda não tem SSH para a VM, aproveite o intervalo para configurar (setup, passo 7)."
+   "notas": "⏱ 3 min — Feche a Parte 1 conectando com a prática: o meu-projeto-devops que vocês constroem desde a Aula 02 (scripts, Dockerfile, compose, histórico) vira hoje a primeira peça do portfólio. Resuma o roteiro da Parte 2: conta, repositório, token, push, branch, PR, merge, pull. Lembre: quem ainda não tem SSH para a VM, aproveite o intervalo para configurar (setup, passo 5)."
   },
   {
    "tipo": "secao",
@@ -239,7 +239,7 @@
    ],
    "bullets": [
     "**Onde:** navegador do **seu computador** + terminal conectado à VM **via SSH**",
-    "SSH é obrigatório hoje: você vai colar um token longo (setup, passo 7)",
+    "SSH é obrigatório hoje: você vai colar um token longo (setup, passo 5)",
     "Troque `SEU-USUARIO` pelo seu usuário do GitHub em todos os comandos"
    ],
    "destaque": "Ciclo de hoje: conta → repositório → token → push → branch → PR → merge → pull.",
@@ -307,16 +307,29 @@
   {
    "tipo": "conteudo",
    "bloco": "parte2",
+   "titulo": "Passo 4 — Antes: o que vai subir?",
+   "codigo": "cd ~/meu-projeto-devops\ngit status\ngit log --oneline --all --decorate",
+   "bullets": [
+    "Esperado: `On branch main`, `working tree clean` e, no log, `(HEAD -> main)` no commit do compose",
+    "Outra branch? `git checkout main` e `git merge --no-edit melhoria-healthcheck`",
+    "Arquivos modificados? `git add` + `git commit` antes de enviar"
+   ],
+   "minutos": 2,
+   "notas": "⏱ 2 min — No terminal SSH da VM. Antes de ligar ao GitHub, confira o que será enviado: git status deve dizer On branch main e working tree clean; no git log --oneline --all --decorate, o commit mais recente (o do compose.yaml) deve estar com HEAD -> main. Quem ficou na branch melhoria-healthcheck desde a Aula 06 fez os commits do Dockerfile e do compose nela: sem o merge, o push da main subiria um projeto incompleto. Correção: git checkout main e git merge --no-edit melhoria-healthcheck. Peça no chat: \"main e limpo? Mande um ✅\"."
+  },
+  {
+   "tipo": "conteudo",
+   "bloco": "parte2",
    "titulo": "Passo 4 — Conecte local ao remoto",
-   "codigo": "cd ~/meu-projeto-devops\ngit remote add origin https://github.com/SEU-USUARIO/meu-projeto-devops.git\ngit remote -v",
+   "codigo": "git remote add origin https://github.com/SEU-USUARIO/meu-projeto-devops.git\ngit remote -v",
    "bullets": [
     "Troque `SEU-USUARIO` pelo seu usuário do GitHub",
     "`git remote add origin` aponta o repositório local para o remoto na nuvem",
     "`git remote -v` confere: deve listar `origin` com a URL (fetch e push)"
    ],
    "rodape": "Resultado esperado: `origin` listado duas vezes (fetch e push), com a URL do seu repositório.",
-   "minutos": 4,
-   "notas": "⏱ 4 min — No terminal SSH da VM. Entre na pasta do projeto. O git remote add origin recebe a URL do repositório: troque SEU-USUARIO pelo usuário do GitHub (a URL está na página do repositório, botão Code, aba HTTPS). O git remote -v confere: deve mostrar origin duas vezes, fetch e push, com a URL certa. Se aparecer 'remote origin already exists', remova com git remote remove origin e refaça."
+   "minutos": 2,
+   "notas": "⏱ 2 min — Ainda na pasta do projeto. O git remote add origin recebe a URL do repositório: troque SEU-USUARIO pelo usuário do GitHub (a URL está na página do repositório, botão Code, aba HTTPS). O git remote -v confere: deve mostrar origin duas vezes, fetch e push, com a URL certa. Se aparecer 'remote origin already exists', remova com git remote remove origin e refaça."
   },
   {
    "tipo": "conteudo",
@@ -444,11 +457,11 @@
    "titulo": "Deu errado? 😥 (2/2)",
    "bullets": [
     "Colei o token e nada apareceu → normal, senhas não aparecem; dê Enter",
-    "`failed to push some refs` → remoto tinha README; pull com `--allow-unrelated-histories`",
+    "`failed to push some refs` → remoto tinha README; `git pull origin main --no-rebase --allow-unrelated-histories --no-edit`",
     "`Repository not found` → erro de digitação na URL (usuário/repo); confira `git remote -v`"
    ],
    "minutos": 0.5,
-   "notas": "⏱ 0,5 min — Mais três: colou o token e nada apareceu (normal, senhas não aparecem; dê Enter), failed to push some refs (o remoto já tinha README: pull com --allow-unrelated-histories) e Repository not found (erro de digitação na URL; confira git remote -v). Monitores no chat ajudam caso a caso."
+   "notas": "⏱ 0,5 min — Mais três: colou o token e nada apareceu (normal, senhas não aparecem; dê Enter), failed to push some refs (o remoto já tinha README: git pull origin main --no-rebase --allow-unrelated-histories --no-edit, comando completo na prática) e Repository not found (erro de digitação na URL; confira git remote -v). Monitores no chat ajudam caso a caso."
   },
   {
    "tipo": "conteudo",
