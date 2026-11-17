@@ -32,7 +32,15 @@ No GitHub: botão **New** (ou https://github.com/new):
 
 1. GitHub → seu avatar → **Settings** → **Developer settings** → **Personal access tokens** → **Fine-grained tokens** → **Generate new token**
 2. Token Name: `bootcamp-matera` · Description: `Token bootcamp-matera` · Resource owner: `Seu username` · Expiration: `30 dias` · *Repository access*: **Only select repositories** → `meu-projeto-devops` · *Permissions*: **+ Add permissions** · **Contents: Read and write** e **Workflows: Read and write** (a segunda é obrigatória na Aula 10, quando você enviará a pipeline).
-3. **Copie o token** (ele aparece uma única vez!).
+3. Clique em **Generate token** e **copie o token** (ele aparece uma única vez!).
+
+> ⚡ **Atalho:** este link abre o formulário já com nome, descrição, validade de 30 dias e as duas permissões preenchidos. Falta só escolher o repositório em *Repository access* (**Only select repositories** → `meu-projeto-devops`) e gerar:
+>
+> <https://github.com/settings/personal-access-tokens/new?name=bootcamp-matera&description=Token+bootcamp-matera&expires_in=30&contents=write&workflows=write>
+>
+> Confira na tela, antes de gerar, se *Contents* e *Workflows* aparecem como **Read and write**.
+
+> 📧 O GitHub só deixa criar token com o **e-mail da conta confirmado**. Se a página pedir a verificação, abra o e-mail de confirmação que o GitHub enviou no cadastro.
 
 > 🔐 O token é sua senha para esta VM. **Não** o salve em arquivos do projeto, **não** poste print dele no chat.
 
