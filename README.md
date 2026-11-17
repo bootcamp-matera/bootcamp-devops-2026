@@ -50,7 +50,7 @@ Todas as práticas rodam em uma **máquina virtual Ubuntu no VirtualBox**, para 
 - [`aulas/`](aulas/) — uma pasta por aula, com o resumo do conteúdo (`README.md`) e a prática passo a passo (`pratica.md`).
 - [`organizacao/`](organizacao/) — materiais de organização do bootcamp (formato das lives, checklist, certificado).
 - [`glossario.md`](glossario.md) — os termos do bootcamp explicados em uma linha. Apareceu uma palavra estranha? Comece por aqui.
-- [`recursos/`](recursos/) — a [cola de comandos do terminal](recursos/cheat-sheet-terminal.md), a [cola do Git](recursos/cheat-sheet-git.md) e a [cola do Docker e do Compose](recursos/cheat-sheet-docker.md) para imprimir e o guia [continuando com Linux](recursos/continuando-com-linux.md) para manter o hábito depois do bootcamp, e a [micro aula de vi](recursos/micro-aula-vi.md), o editor usado em todas as práticas.
+- [`recursos/`](recursos/) — a [cola de comandos do terminal](recursos/cheat-sheet-terminal.md), a [cola do Git](recursos/cheat-sheet-git.md), a [cola do Docker e do Compose](recursos/cheat-sheet-docker.md) e a [cola do GitHub](recursos/cheat-sheet-github.md) para imprimir e o guia [continuando com Linux](recursos/continuando-com-linux.md) para manter o hábito depois do bootcamp, e a [micro aula de vi](recursos/micro-aula-vi.md), o editor usado em todas as práticas.
 
 ## 🏅 Certificado
 
