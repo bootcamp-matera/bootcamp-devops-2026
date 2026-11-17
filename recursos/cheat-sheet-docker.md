@@ -209,4 +209,4 @@ docker compose down                                          # 7. derruba (e o 4
 git add compose.yaml && git commit -m "adiciona compose.yaml com site e redis"   # 8. versiona
 ```
 
-Veja também: [cola do terminal](cheat-sheet-terminal.md) · [cola do Git](cheat-sheet-git.md) · [glossário](../glossario.md).
+Veja também: [cola do terminal](cheat-sheet-terminal.md) · [cola do Git](cheat-sheet-git.md) · [cola do GitHub](cheat-sheet-github.md) · [glossário](../glossario.md).

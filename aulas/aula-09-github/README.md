@@ -37,6 +37,8 @@ Analogia: Git é o editor de texto; GitHub é a biblioteca pública onde a obra 
 | `git pull` | Traz os commits novos do GitHub |
 | `git clone <url>` | Baixa um repositório inteiro (qualquer um público!) |
 
+> 📝 Estes comandos, o token campo a campo, o ciclo do Pull Request desenhado e o socorro dos erros estão na [cola do GitHub](../../recursos/cheat-sheet-github.md). Imprima e deixe ao lado.
+
 ### 3. Pull Request: a cerimônia mais importante do dia a dia
 
 O **PR** é o pedido formal: *"revisem minha branch e, se estiver boa, integrem na main"*. É onde acontece:

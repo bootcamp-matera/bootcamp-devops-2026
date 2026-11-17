@@ -54,6 +54,7 @@ Os termos do bootcamp explicados em uma linha, em ordem alfabética. Não decore
 | **push / pull** | Enviar seus commits para o GitHub / trazer os commits novos de lá |
 | **Redis** | Um banco de dados em memória, rápido, muito usado para contadores e cache |
 | **registry** | Um "depósito" de imagens Docker (o Docker Hub é o mais conhecido) |
+| **remoto (`origin`)** | O endereço do repositório no GitHub, anotado no repositório local. `origin` é o apelido padrão |
 | **repositório** | A pasta do projeto com o histórico do Git dentro (`.git`) |
 | **root** | O superusuário do Linux: pode tudo. `sudo` executa um único comando como root |
 | **runner** | A máquina que executa a pipeline no GitHub Actions |

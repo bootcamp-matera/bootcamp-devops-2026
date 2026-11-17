@@ -102,6 +102,8 @@ git status  ➜  git diff  ➜  git add arquivo  ➜  git commit -m "msg"  ➜  
 | `git pull` | Traz e integra as novidades do GitHub |
 | `git fetch` | Só traz as novidades, sem mexer nos seus arquivos |
 
+> Token, Pull Request passo a passo e os erros de `push` estão na [cola do GitHub](cheat-sheet-github.md).
+>
 > No GitHub, a `main` costuma ser **protegida**: nada de commit direto — tudo chega por branch + Pull Request.
 
 ## ↩️ Desfazer
@@ -144,4 +146,4 @@ git switch main                       # 6. volta para a linha oficial
 git merge minha-melhoria              # 7. integra (no GitHub: Pull Request)
 ```
 
-Veja também: [cola do terminal](cheat-sheet-terminal.md) · [glossário](../glossario.md).
+Veja também: [cola do GitHub](cheat-sheet-github.md) · [cola do terminal](cheat-sheet-terminal.md) · [glossário](../glossario.md).
