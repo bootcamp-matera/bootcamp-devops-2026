@@ -144,10 +144,10 @@ Os quatro scripts estão neste repositório. Via SSH, baixe-os para a pasta cert
 
 ```bash
 cd ~/meu-projeto-devops/scripts
-curl -O https://raw.githubusercontent.com/matera-vrn/bootcamp-devops-2026/main/aulas/aula-05-devops-pipelines/scripts/build.sh
-curl -O https://raw.githubusercontent.com/matera-vrn/bootcamp-devops-2026/main/aulas/aula-05-devops-pipelines/scripts/test.sh
-curl -O https://raw.githubusercontent.com/matera-vrn/bootcamp-devops-2026/main/aulas/aula-05-devops-pipelines/scripts/deploy.sh
-curl -O https://raw.githubusercontent.com/matera-vrn/bootcamp-devops-2026/main/aulas/aula-05-devops-pipelines/scripts/pipeline.sh
+curl -O https://raw.githubusercontent.com/viniciusnavarro/bootcamp-devops-2026/main/aulas/aula-05-devops-pipelines/scripts/build.sh
+curl -O https://raw.githubusercontent.com/viniciusnavarro/bootcamp-devops-2026/main/aulas/aula-05-devops-pipelines/scripts/test.sh
+curl -O https://raw.githubusercontent.com/viniciusnavarro/bootcamp-devops-2026/main/aulas/aula-05-devops-pipelines/scripts/deploy.sh
+curl -O https://raw.githubusercontent.com/viniciusnavarro/bootcamp-devops-2026/main/aulas/aula-05-devops-pipelines/scripts/pipeline.sh
 chmod +x build.sh test.sh deploy.sh pipeline.sh
 ```
 
@@ -159,7 +159,7 @@ Baixe para a pasta dos seus scripts e **leia antes de executar** (`cat pipeline-
 
 ```bash
 cd ~/meu-projeto-devops/scripts
-curl -O https://raw.githubusercontent.com/matera-vrn/bootcamp-devops-2026/main/aulas/aula-05-devops-pipelines/scripts/pipeline-show.sh
+curl -O https://raw.githubusercontent.com/viniciusnavarro/bootcamp-devops-2026/main/aulas/aula-05-devops-pipelines/scripts/pipeline-show.sh
 chmod +x pipeline-show.sh
 ./pipeline-show.sh
 ```
